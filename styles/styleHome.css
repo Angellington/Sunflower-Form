@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+/*Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-image: url(../src/images/background/sunflower2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+    
+}
+
+.caixa {
+    background-color: #333333e2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 30%;
+    min-height: 65vh;
+    border-radius: 16px;
+    contain: content;
+    overflow:scroll ;
+    scrollbar-width: none;
+}
+/*Titutlo */
+.caixa .description {
+    background-color: rgba(0, 255, 255, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1.5em;
+    gap: 0.9em;
+    
+    font-size: 1em;
+    font-weight: 700;
+    color: #ffffff;
+}
+.caixa .description .separador {
+    height: 4px;
+    width: 90%;
+    background-color: #838383;
+    border-radius: 20px;
+}
+
+/* Formulario */
+
+.form {
+    background-color: rgba(0, 255, 255, 0);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+fieldset {
+    background-color: #83838300;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+@media (max-width: 2000px) and (min-width: 400px){
+    fieldset .first {
+        background-color: rgba(157, 31, 31, 0);
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        
+    }
+    fieldset .first .box1 {
+        background-color: rgba(255, 228, 196, 0);
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+        
+    }
+    fieldset .first .box1 p {
+        background-color: rgba(105, 135, 135, 0);
+        padding: 3% 0 4% 2% ;
+    }
+    fieldset .first .box1 label {
+        background-color: rgba(165, 42, 42, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    fieldset .first .box1 label input {
+        width: 90%;
+        background-color: #4A555D;
+        padding: 1.2em;
+        border: none;
+        border-radius: 8px;
+    }
+    
+    
+    
+    
+    fieldset .first .box2 {
+        background-color: rgba(255, 228, 196, 0);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        
+    }
+    fieldset .first .box2 p {
+        background-color: rgba(105, 135, 135, 0);
+        padding: 3% 0 4% 2% ;  
+    }
+    fieldset .first .box2 label {
+        background-color: rgba(165, 42, 42, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    fieldset .first .box2 label input {
+        width: 90%;
+        background-color: #4A555D;
+        padding: 1.2em;
+        border: none;
+        border-radius: 8px;
+    }
+}
+
+
+
+
+@media (max-width: 400px) {
+    .caixa {
+        width: 100%;
+    }
+    fieldset {
+        background-color: #83838300;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    fieldset .first {
+        background-color: rgba(127, 255, 212, 0);
+
+        
+    }
+    fieldset .first .box1 {
+        background-color: rgba(255, 228, 196, 0);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    fieldset .first .box1 p {
+        background-color: rgba(105, 135, 135, 0);
+        padding: 2%;
+    }
+    fieldset .first .box1 label {
+        background-color: rgba(165, 42, 42, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    fieldset .first .box1 label input {
+        width: 100%;
+        background-color: #4A555D;
+        padding: 1.2em;
+        border: none;
+        border-radius: 8px;
+    }
+    
+    
+    
+    
+    fieldset .first .box2 {
+        background-color: rgba(255, 228, 196, 0);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    fieldset .first .box2 p {
+        background-color: rgba(105, 135, 135, 0.004);
+        padding: 2%;
+    }
+    fieldset .first .box2 label {
+        background-color: rgba(165, 42, 42, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    fieldset .first .box2 label input {
+        width: 100%;
+        background-color: #4A555D;
+        padding: 1.2em;
+        border: none;
+        border-radius: 8px;
+    }
+}
+
+/* Email */
+.second {
+    background-color: rgba(127, 255, 212, 0);
+    display: flex;
+    flex-direction: column;
+}
+.second .box3 {
+    background-color: rgba(245, 222, 179, 0);
+    display: flex;
+    flex-direction: column;
+}
+.second .box3 label {
+    background-color: rgba(255, 99, 71, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.second .box3 p {
+    padding: 3% 0 3% 2% ;
+}
+.second .box3 input {
+    background-color: #4A555D;
+    border: none;
+    padding: 1.2em;
+    border-radius: 8px;
+}
+
+/* Mensagem */
+
+.fourth {
+    background-color: rgba(187, 142, 229, 0);
+}
+.fourth p {
+    padding: 3% 0 3% 2% ;
+}
+.fourth label {
+    background-color: rgba(255, 255, 0, 0);
+    display: flex;
+}
+.fourth textarea {
+    background-color:#4A555D; ;
+    border: none;
+    border-radius: 0.9em;
+    width: 100%;
+    padding: 4%;
+}
+
+/* Eu não sou um robô */
+.robot {
+    padding: 4% 0% 3% 2%;
+    background-color: rgba(53, 146, 146, 0);
+    display: flex;
+}
+.robot label {
+    display: flex;
+    gap: 10px;
+}
+.robot input {
+    width: 20px;
+    border-radius: 8px;
+}
+
+/* Enviar */
+.envio {
+    background-color: rgba(113, 104, 104, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2em;
+}
+
+.envio input {
+    background-color: black;
+    width: 70%;
+    height: 6vh;
+    border: none;
+    border-radius: 8px;
+    margin: 1.8em;
+
+    font-size: 16px;
+}
+.envio input:hover {
+    background-color: black;
+    width: 70%;
+    height: 6vh;
+    border: #FFF solid 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 1.8em;
+
+    font-size: 16px;
+}
+
+
+
+input {
+    color: #FFF;
+}
+input::placeholder {
+    color: #939393;
+}
+textarea {
+    color: #FFF;
+    padding: 2%;
+}
+textarea::placeholder {
+    color: #939393;
+}

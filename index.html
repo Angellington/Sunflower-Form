@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/styleHome.css">
+    <title>Formulario Sunflower</title>
+</head>
+<body>
+    <div class="caixa">
+        <div class="description">
+            <h1 class="tittle" id="title1">FALE CONOSCO</h1>
+            <div class="separador"></div>
+        </div>
+
+        <form method="POST" class="form" action="https://formsubmit.co/aloenevesreino2005@gmail.com">
+            <fieldset>
+                <div class="first">
+                    <div class="box1"><p>Nome</p>
+                        <label for="name">
+                            <input type="text" placeholder="Minerva" id="name" required>
+                        </label>
+                    </div>                
+                    <div class="box2"><p>Sobrenome</p>
+                        <label for="lastname">
+                            <input type="text" placeholder="Alves" id="lastname">
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="second">
+                    <div class="box3">
+                            <label for="email"><p>Email</p>
+                                <input type="email" placeholder="minervalves@gmail.com"  id="email" required>
+                            </label>
+                    </div>
+                <div class="fourth"><p>Sua mensagem</p>
+                    <label for="message">
+                        <textarea name="textarea" id="area1" cols="30" rows="10" id="email" placeholder="A dublagem é algo que me encanta" required></textarea>
+                    </label>
+                </div>
+                </div>
+                <div class="robot">
+                    <label for="robot">
+                        <input type="checkbox" required><p>Eu não sou um robô</p>
+                    </label>
+                </div>
+                <input type="hidden" name="_subject" value="Nova mensagem!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+            </fieldset>
+            <label class="envio" for="submit" value="Enviar">
+                <input type="submit">
+            </label>
+                
+        </form>
+    </div>
+</body>
+</html>
