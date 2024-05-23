@@ -10,6 +10,7 @@
 }
 
 body {
+    background-color: #FBFE76;
     background-image: url(../src/images/background/sunflower2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,9 +35,10 @@ body {
     min-height: 65vh;
     border-radius: 16px;
     contain: content;
-    overflow:scroll ;
-    scrollbar-width: none;
-}
+    overflow-y:scroll ;
+    overflow-x: hidden;
+    scrollbar-width: none ;
+    }
 /*Titutlo */
 .caixa .description {
     background-color: rgba(0, 255, 255, 0);
@@ -285,26 +287,31 @@ fieldset {
     display: flex;
     justify-content: center;
     margin-top: 0.2em;
+    margin-bottom: 2em;
 }
 
 .envio input {
     background-color: black;
-    width: 70%;
-    height: 6vh;
+    width: 90%;
+    height: 3.5em;
     border: none;
     border-radius: 8px;
     margin: 1.8em;
 
     font-size: 16px;
+    transition: 1.2s;
 }
 .envio input:hover {
     background-color: black;
-    width: 70%;
-    height: 6vh;
+    width: 90%;
+    height: 3.5em;
     border: #FFF solid 2px;
     cursor: pointer;
     border-radius: 8px;
     margin: 1.8em;
+
+
+
 
     font-size: 16px;
 }
@@ -320,6 +327,7 @@ input::placeholder {
 textarea {
     color: #FFF;
     padding: 2%;
+    resize: none;
 }
 textarea::placeholder {
     color: #939393;
